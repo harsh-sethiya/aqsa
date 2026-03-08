@@ -23,7 +23,15 @@
         <div class="flag__birthday">
             <img src="./images/1.png" alt="" width="350" class="flag__left">
             <img src="./images/1.png" alt="" width="350" class="flag__right">
-            <audio src="./images/yoyo.mp3">
+            <audio id="bg-music" loop>
+                <source src="./images/yoyo.mp3" type="audio/mpeg">
+            </audio>
+
+            <script>
+            document.addEventListener("click", function(){
+            document.getElementById("bg-music").play();
+            });
+            </script>
         </div>
         <div class="content">
             <div class="left">
